@@ -1,0 +1,1919 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul,
+dl,
+dd,
+dt,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Microsoft YaHei", "΢���ź�", Tahoma, Helvetica;
+  color: #000;
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  .topnav {
+    width: 100%;
+    height: 60px;
+    background-color: #007FEB;
+    position: relative;
+  }
+  .topnav .title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .topnav .back {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../../images/icon_circle_back.png") no-repeat center;
+    left: 15px;
+    top: 15px;
+    background-size: 30px 30px;
+  }
+  .year {
+    background-color: #D9F1FF;
+    height: 60px;
+    position: relative;
+  }
+  .year .nowyear {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    color: #0091FA;
+    text-indent: 70px;
+  }
+  .year .nowyear::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    background: url("../../images/icon_year.png") no-repeat;
+    left: 15px;
+    top: 10px;
+    background-size: 40px 40px;
+  }
+  .userinfo1 {
+    padding: 0 10px;
+    border-bottom: 5px solid #DFDFDF;
+  }
+  .userinfo1 .line1 {
+    border-bottom: 1px solid #DDDDDD;
+    position: relative;
+  }
+  .userinfo1 .line1 .username,
+  .userinfo1 .line1 .counts,
+  .userinfo1 .line1 .reason {
+    flex: 2;
+    text-indent: 40px;
+    font-weight: 800;
+  }
+  .userinfo1 .line1 .reason {
+    flex: 1;
+    text-indent: 0;
+    text-align: center;
+  }
+  .userinfo1 .line1 .username::before,
+  .userinfo1 .line1 .counts::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 10px;
+    background-size: 30px 30px!important;
+    -webkit-background-size: 30px 30px;
+  }
+  .userinfo1 .line1 .username::before {
+    background: url("../../images/name.png") no-repeat center;
+    left: 0;
+  }
+  .userinfo1 .line1 .counts::before {
+    left: 37%;
+    background: url("../../images/family_number.png") no-repeat center;
+  }
+  .userinfo1 .line1,
+  .userinfo1 .line2 {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+  }
+  .userinfo1 .line2 > div {
+    flex: 1;
+  }
+  .userinfo2 {
+    padding: 0 10px;
+    border-bottom: 5px solid #DFDFDF;
+  }
+  .userinfo2 ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #DFDFDF;
+    overflow: hidden;
+  }
+  .userinfo2 ul li span {
+    display: block;
+  }
+  .userinfo2 ul li span:first-of-type {
+    float: left;
+    width: 35%;
+    font-weight: 800;
+  }
+  .userinfo2 ul li span:last-of-type {
+    float: right;
+    width: 65%;
+    color: #007FEB;
+  }
+  .userinfo2 ul li:last-of-type {
+    border: none;
+  }
+  .link-content {
+    padding: 5px 0;
+  }
+  .link-content table,
+  .link-content tr,
+  .link-content td {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .link-content tr {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  .link-content tr td {
+    width: 25%;
+    border-right: 1px solid #DFDFDF;
+  }
+  .link-content tr td a {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+  }
+  .link-content tr td a span {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+  }
+  .link-content tr td a .logoname {
+    width: 100%;
+    bottom: 5px;
+  }
+  .link-content tr td a .iconpic,
+  .link-content tr td a .iconpic1 {
+    display: block;
+    width: 60px;
+    height: 60px;
+    -webkit-background-size: 60px 60px!important;
+    background-size: 60px 60px!important;
+    left: 50%;
+    margin-left: -30px;
+  }
+  .link-content tr td a .iconpic1 {
+    display: block;
+    width: 60px;
+    height: 60px;
+    -webkit-background-size: 40px 40px!important;
+    background-size: 40px 40px!important;
+    background: url("../../images/link_content_12.png") no-repeat center;
+    left: 50%;
+    margin-left: -30px;
+  }
+  .link-content tr td a .green,
+  .link-content tr td a .yellow {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 20px;
+  }
+  .link-content tr td a .green {
+    left: 0;
+    color: #3DB806;
+    font-weight: 800;
+  }
+  .link-content tr td a .green::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/1.png") no-repeat center;
+    -webkit-background-size: 20px 20px!important;
+    background-size: 20px 20px!important;
+    left: 5px;
+    top: 20px;
+  }
+  .link-content tr td a .yellow {
+    right: 0;
+    color: #F58A00;
+    font-weight: 800;
+  }
+  .link-content tr td a .yellow::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/2.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    left: 5px;
+    top: 20px;
+  }
+  .link-content tr td:last-of-type {
+    border-right: none;
+  }
+  .link-content tr:last-of-type {
+    border-bottom: none;
+  }
+  .measure-user {
+    height: 100px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .measure-user .left {
+    width: 73%;
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .measure-user .left div {
+    height: 50px;
+    line-height: 50px;
+    text-indent: 40px;
+    position: relative;
+  }
+  .measure-user .left .username::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 30px 30px !important;
+    background-size: 30px 30px !important;
+    left: 0;
+    top: 10px;
+  }
+  .measure-user .left .idnumber::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    background: url("../../images/icon_cun_num.png") no-repeat center;
+    -webkit-background-size: 30px 30px !important;
+    background-size: 30px 30px !important;
+    left: 0;
+    top: 10px;
+  }
+  .measure-user .right {
+    width: 23%;
+    height: 100%;
+    float: left;
+  }
+  .measure-user .right div {
+    text-align: center;
+  }
+  .measure-user .right .score {
+    padding: 12px 5px;
+    font-size: 30px;
+    color: #3DB806;
+  }
+  .measure-nav {
+    padding: 0 5px;
+    border-bottom: 5px solid #E8E8E8;
+  }
+  .measure-nav .line1,
+  .measure-nav .line2 {
+    padding: 10px 0;
+    height: 80px;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    font-size: 14px;
+  }
+  .measure-nav .line1 .green,
+  .measure-nav .line2 .green {
+    color: #3DB806;
+  }
+  .measure-nav .line1 .warning,
+  .measure-nav .line2 .warning {
+    color: #F58A00;
+  }
+  .measure-nav .line1 .red,
+  .measure-nav .line2 .red {
+    color: #F9614C;
+  }
+  .measure-nav .line1 .item,
+  .measure-nav .line2 .item {
+    flex: 1;
+    box-sizing: border-box;
+    height: 80px;
+    border-right: 1px solid #E8E8E8;
+    padding-left: 35px;
+    position: relative;
+  }
+  .measure-nav .line1 .item div,
+  .measure-nav .line2 .item div {
+    text-align: center;
+  }
+  .measure-nav .line1 .item div:first-of-type,
+  .measure-nav .line2 .item div:first-of-type {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .measure-nav .line1 .item::after,
+  .measure-nav .line2 .item::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    -webkit-background-size: 30px 40px!important;
+    background-size: 30px 40px!important;
+    left: 5px;
+    top: 15px;
+  }
+  .measure-nav .line1 div:nth-of-type(3),
+  .measure-nav .line2 div:nth-of-type(3) {
+    border-right: none;
+  }
+  .measure-nav .line1 div:nth-of-type(1)::after {
+    background: url("../../images/icon_fpcs_state_csjz.png") no-repeat center;
+  }
+  .measure-nav .line1 div:nth-of-type(2)::after {
+    background: url("../../images/icon_fpcs_state_normal.png") no-repeat center;
+  }
+  .measure-nav .line1 div:nth-of-type(3)::after {
+    background: url("../../images/icon_fpcs_state_warning.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(1)::after {
+    background: url("../../images/icon_fpcs_state_wcj.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(2)::after {
+    background: url("../../images/icon_fpcs_state_ygwdy.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(3)::after {
+    background: url("../../images/icon_fpcs_state_ygydw.png") no-repeat center;
+  }
+  .measure-poorlist ul li {
+    height: 50px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .measure-poorlist ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    position: relative;
+  }
+  .measure-poorlist ul li a span {
+    line-height: 50px;
+  }
+  .measure-poorlist ul li a .title {
+    padding: 0 10px;
+    display: inline-block;
+  }
+  .measure-poorlist ul li a .line {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  .measure-poorlist ul li a .icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+    background: url("../../images/icon_fpcs_state_normal.png") no-repeat center;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+  }
+  .lifeinfo {
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .lifeinfo div {
+    float: left;
+  }
+  .lifeinfo .address {
+    width: 80%;
+    text-indent: 1em;
+  }
+  .lifeinfo .username {
+    width: 20%;
+    text-align: center;
+  }
+  .tabsbox .tabsnav,
+  .responsible .tabsnav,
+  .basicinfolist .tabsnav,
+  .familyinfolist .tabsnav {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 10px 0;
+  }
+  .tabsbox .tabsnav div,
+  .responsible .tabsnav div,
+  .basicinfolist .tabsnav div,
+  .familyinfolist .tabsnav div {
+    flex: 1;
+    color: #7A7A7A;
+    text-align: center;
+    border-right: 1px solid #1797F6;
+  }
+  .tabsbox .tabsnav div:last-of-type,
+  .responsible .tabsnav div:last-of-type,
+  .basicinfolist .tabsnav div:last-of-type,
+  .familyinfolist .tabsnav div:last-of-type {
+    border: none;
+  }
+  .tabsbox .tabsnav .current,
+  .responsible .tabsnav .current,
+  .basicinfolist .tabsnav .current,
+  .familyinfolist .tabsnav .current {
+    color: #1797F6;
+  }
+  .tabsbox .tabscontent ul,
+  .responsible .tabscontent ul,
+  .basicinfolist .tabscontent ul,
+  .familyinfolist .tabscontent ul {
+    background-color: #fff;
+    display: none;
+  }
+  .tabsbox .tabscontent ul li,
+  .responsible .tabscontent ul li,
+  .basicinfolist .tabscontent ul li,
+  .familyinfolist .tabscontent ul li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .tabsbox .tabscontent ul li div:nth-of-type(1),
+  .responsible .tabscontent ul li div:nth-of-type(1),
+  .basicinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+    flex: 3;
+    padding-left: 10px;
+  }
+  .tabsbox .tabscontent ul li div:nth-of-type(2),
+  .responsible .tabscontent ul li div:nth-of-type(2),
+  .basicinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+    flex: 1;
+    text-align: center;
+    color: #1797F6;
+  }
+  .tabsbox .tabscontent ul li .weight,
+  .responsible .tabscontent ul li .weight,
+  .basicinfolist .tabscontent ul li .weight,
+  .familyinfolist .tabscontent ul li .weight {
+    font-weight: 800;
+  }
+  .tabsbox .tabscontent .show,
+  .responsible .tabscontent .show,
+  .basicinfolist .tabscontent .show,
+  .familyinfolist .tabscontent .show {
+    display: block;
+  }
+  .planarea {
+    padding: 10px 10px;
+  }
+  .planarea p {
+    margin-bottom: 10px;
+  }
+  .responsible .tabscontent ul,
+  .basicinfolist .tabscontent ul,
+  .familyinfolist .tabscontent ul {
+    display: block;
+  }
+  .responsible .tabscontent ul li div:nth-of-type(1),
+  .basicinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+    flex: 1;
+    text-align: left;
+  }
+  .responsible .tabscontent ul li div:nth-of-type(2),
+  .basicinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+    padding-right: 10px;
+    text-align: right;
+    flex: 2;
+  }
+  .familyuser {
+    padding: 10px 5px;
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .familyuser .line1 {
+    display: flex;
+  }
+  .familyuser .line1 div {
+    flex: 1;
+  }
+  .familyuser .line1 div .gender {
+    margin-left: 10px;
+  }
+  .familyuser .line1 div:first-of-type {
+    padding-left: 35px;
+    position: relative;
+  }
+  .familyuser .line1 div:first-of-type::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+    left: 0;
+    top: -5px;
+  }
+  .familyuser .line2 {
+    display: flex;
+    color: #7A7A7A;
+  }
+  .familyuser .line2 div {
+    padding-top: 10px;
+  }
+  .familyuser .line2 div:first-of-type {
+    flex: 3;
+    text-indent: 35px;
+  }
+  .familyuser .line2 div:last-of-type {
+    flex: 5;
+  }
+  .familyinfolist .title,
+  .familyperson .title {
+    text-align: center;
+    color: #1797F6;
+    padding: 10px 0;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .familyinfolist .tabscontent ul,
+  .familyperson .tabscontent ul {
+    display: block;
+  }
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyperson .tabscontent ul li div:nth-of-type(1) {
+    flex: 3;
+    text-align: left;
+  }
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyperson .tabscontent ul li div:nth-of-type(2) {
+    padding-right: 10px;
+    text-align: right;
+    flex: 1;
+  }
+  .addname {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .addname ul li {
+    padding: 10px 60px;
+    position: relative;
+  }
+  .addname ul li:first-of-type::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../../images/address.png") no-repeat center;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+    left: 30px;
+    top: 5px;
+  }
+  .addname ul li:last-of-type::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    left: 35px;
+    top: 10px;
+  }
+  .familyperson .listcontent ul li {
+    border-bottom: 1px solid #E3E3E3;
+    display: flex;
+    padding: 15px 0;
+  }
+  .familyperson .listcontent ul li div {
+    flex: 1;
+    text-align: center;
+  }
+  .familyperson .listcontent ul li div:nth-of-type(2),
+  .familyperson .listcontent ul li div:nth-of-type(3),
+  .familyperson .listcontent ul li div:nth-of-type(4) {
+    color: #1797F6;
+  }
+  .familyperson .listcontent ul li div:last-of-type a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/enter_icon.png") no-repeat center;
+    -webkit-background-size: 15px 19px;
+    background-size: 15px 19px;
+  }
+  .moveoutlist ul li {
+    padding: 10px 10px;
+    display: flex;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .moveoutlist ul li div:first-of-type {
+    flex: 3;
+  }
+  .moveoutlist ul li div:last-of-type {
+    flex: 1;
+    text-align: right;
+    color: #1797F6;
+  }
+  .poorsearch .search {
+    display: block;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../../images/village_search_btn_white.png") no-repeat center;
+    right: 15px;
+    top: 15px;
+    background-size: 30px 30px;
+  }
+  .counttitle {
+    padding: 20px;
+    background-color: #D9F1FF;
+    display: flex;
+  }
+  .counttitle div {
+    flex: 1;
+    color: #1797F6;
+  }
+  .counttitle div span {
+    font-weight: 900;
+  }
+  .counttitle div:first-of-type {
+    text-align: left;
+  }
+  .counttitle div:last-of-type {
+    text-align: right;
+  }
+  .responselist {
+    padding: 10px;
+  }
+  .responselist ul {
+    border: 1px solid #E0E0E0;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .responselist ul li:first-of-type {
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    padding: 10px 0;
+  }
+  .responselist ul li:first-of-type div {
+    flex: 2;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+  }
+  .responselist ul li:first-of-type div:first-of-type {
+    font-weight: 900;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(2),
+  .responselist ul li:first-of-type div:nth-of-type(3),
+  .responselist ul li:first-of-type div:nth-of-type(4) {
+    font-size: 12px;
+    text-align: center;
+    color: #A6A6A6;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(2) {
+    text-align: left;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(3) {
+    flex: 1;
+    background-color: #34BE2D;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  .responselist ul li:first-of-type div:last-of-type {
+    padding-right: 15px;
+    text-align: right;
+  }
+  .responselist ul li:first-of-type div:last-of-type::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 19px;
+    background: url("../../images/enter_icon.png") no-repeat center;
+    -webkit-background-size: 10px 19px;
+    background-size: 10px 19px;
+    right: 0;
+    top: 0;
+  }
+  .responselist ul li:last-of-type {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responselist ul li:last-of-type div:first-of-type {
+    flex: 1;
+    color: #7A7A7A;
+    font-size: 12px;
+  }
+  .responselist ul li:last-of-type div:last-of-type {
+    flex: 4;
+    font-weight: 900;
+  }
+  .householderinfo {
+    border-top: 10px solid #DFDFDF;
+  }
+  .householderinfo > ul,
+  .householderinfo > div {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .householderinfo > ul li,
+  .householderinfo > div li {
+    display: flex;
+  }
+  .householderinfo > ul li div,
+  .householderinfo > div li div {
+    flex: 1;
+    padding: 10px 10px;
+  }
+  .householderinfo > ul li div:last-of-type,
+  .householderinfo > div li div:last-of-type {
+    text-align: right;
+  }
+  .householderinfo > ul li:first-of-type {
+    padding: 10px 10px;
+    border-bottom: 1px solid #C8C8C8;
+    border-top: 1px solid #C8C8C8;
+    border-left: 5px solid #46A9EC;
+  }
+  .householderinfo .familytree > div:first-of-type,
+  .householderinfo .lifetree > div:first-of-type {
+    padding: 10px 10px;
+    border-top: 1px solid #C8C8C8;
+    border-left: 5px solid #46A9EC;
+  }
+  .householderinfo .familytree > ul,
+  .householderinfo .lifetree > ul {
+    border-top: 1px solid #C8C8C8;
+  }
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .topnav {
+    width: 100%;
+    height: 80px;
+    background-color: #007FEB;
+    position: relative;
+  }
+  .topnav .title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+  }
+  .topnav .back {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url("../../images/icon_circle_back.png") no-repeat center;
+    left: 20px;
+    top: 20px;
+    background-size: 40px 40px;
+  }
+  .year {
+    background-color: #D9F1FF;
+    height: 80px;
+    position: relative;
+  }
+  .year .nowyear {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    color: #0091FA;
+    text-indent: 80px;
+  }
+  .year .nowyear::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: '';
+    position: absolute;
+    background: url("../../images/icon_year.png") no-repeat;
+    left: 15px;
+    top: 10px;
+    background-size: 60px 60px;
+  }
+  .userinfo1 {
+    padding: 0 10px;
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .userinfo1 .line1 {
+    border-bottom: 1px solid #DDDDDD;
+    position: relative;
+  }
+  .userinfo1 .line1 .username,
+  .userinfo1 .line1 .counts,
+  .userinfo1 .line1 .reason {
+    flex: 2;
+    text-indent: 40px;
+    font-weight: 800;
+  }
+  .userinfo1 .line1 .reason {
+    flex: 1;
+    text-indent: 0;
+    text-align: center;
+  }
+  .userinfo1 .line1 .username::before,
+  .userinfo1 .line1 .counts::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-size: 30px 30px!important;
+    -webkit-background-size: 30px 30px;
+  }
+  .userinfo1 .line1 .username::before {
+    background: url("../../images/name.png") no-repeat center;
+    left: 0;
+  }
+  .userinfo1 .line1 .counts::before {
+    left: 37%;
+    background: url("../../images/family_number.png") no-repeat center;
+  }
+  .userinfo1 .line1,
+  .userinfo1 .line2 {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+  }
+  .userinfo1 .line2 > div {
+    flex: 1;
+  }
+  .userinfo2 {
+    padding: 0 10px;
+    border-bottom: 5px solid #DFDFDF;
+  }
+  .userinfo2 ul li {
+    padding: 25px 0;
+    border-bottom: 1px solid #DFDFDF;
+    overflow: hidden;
+  }
+  .userinfo2 ul li span {
+    display: block;
+  }
+  .userinfo2 ul li span:first-of-type {
+    float: left;
+    width: 35%;
+    font-weight: 800;
+  }
+  .userinfo2 ul li span:last-of-type {
+    float: right;
+    width: 65%;
+    color: #007FEB;
+  }
+  .userinfo2 ul li:last-of-type {
+    border: none;
+  }
+  .link-content {
+    padding: 5px 0;
+  }
+  .link-content table,
+  .link-content tr,
+  .link-content td {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .link-content tr {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  .link-content tr td {
+    width: 25%;
+    border-right: 1px solid #DFDFDF;
+  }
+  .link-content tr td a {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+  }
+  .link-content tr td a span {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+  }
+  .link-content tr td a .logoname {
+    width: 100%;
+    bottom: 5px;
+  }
+  .link-content tr td a .iconpic,
+  .link-content tr td a .iconpic1 {
+    display: block;
+    width: 70px;
+    height: 70px;
+    -webkit-background-size: 70px 70px!important;
+    background-size: 70px 70px!important;
+    left: 50%;
+    margin-left: -35px;
+  }
+  .link-content tr td a .iconpic1 {
+    display: block;
+    width: 70px;
+    height: 70px;
+    -webkit-background-size: 40px 40px!important;
+    background-size: 40px 40px!important;
+    background: url("../../images/link_content_12.png") no-repeat center;
+    left: 50%;
+    margin-left: -35px;
+  }
+  .link-content tr td a .green,
+  .link-content tr td a .yellow {
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  .link-content tr td a .green {
+    left: 0;
+    color: #3DB806;
+    font-weight: 800;
+  }
+  .link-content tr td a .green::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/1.png") no-repeat center;
+    -webkit-background-size: 20px 20px!important;
+    background-size: 20px 20px!important;
+    left: 5px;
+    top: 25px;
+  }
+  .link-content tr td a .yellow {
+    right: 0;
+    color: #F58A00;
+    font-weight: 800;
+  }
+  .link-content tr td a .yellow::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/2.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    left: 5px;
+    top: 25px;
+  }
+  .link-content tr td:last-of-type {
+    border-right: none;
+  }
+  .link-content tr:last-of-type {
+    border-bottom: none;
+  }
+  .measure-user {
+    height: 120px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .measure-user .left {
+    width: 73%;
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .measure-user .left div {
+    height: 60px;
+    line-height: 60px;
+    text-indent: 40px;
+    position: relative;
+  }
+  .measure-user .left .username::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 30px 30px !important;
+    background-size: 30px 30px !important;
+    left: 0;
+    top: 15px;
+  }
+  .measure-user .left .idnumber::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    background: url("../../images/icon_cun_num.png") no-repeat center;
+    -webkit-background-size: 30px 30px !important;
+    background-size: 30px 30px !important;
+    left: 0;
+    top: 15px;
+  }
+  .measure-user .right {
+    width: 23%;
+    height: 100%;
+    float: left;
+  }
+  .measure-user .right div {
+    text-align: center;
+  }
+  .measure-user .right .score {
+    padding: 20px 5px;
+    font-size: 30px;
+    color: #3DB806;
+  }
+  .measure-nav {
+    padding: 0 10px;
+    border-bottom: 5px solid #E8E8E8;
+  }
+  .measure-nav .line1,
+  .measure-nav .line2 {
+    padding: 10px 0;
+    height: 80px;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    font-size: 14px;
+  }
+  .measure-nav .line1 .green,
+  .measure-nav .line2 .green {
+    color: #3DB806;
+  }
+  .measure-nav .line1 .warning,
+  .measure-nav .line2 .warning {
+    color: #F58A00;
+  }
+  .measure-nav .line1 .red,
+  .measure-nav .line2 .red {
+    color: #F9614C;
+  }
+  .measure-nav .line1 .item,
+  .measure-nav .line2 .item {
+    flex: 1;
+    box-sizing: border-box;
+    height: 80px;
+    border-right: 1px solid #E8E8E8;
+    padding-left: 45px;
+    position: relative;
+  }
+  .measure-nav .line1 .item div,
+  .measure-nav .line2 .item div {
+    text-align: center;
+  }
+  .measure-nav .line1 .item div:first-of-type,
+  .measure-nav .line2 .item div:first-of-type {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .measure-nav .line1 .item::after,
+  .measure-nav .line2 .item::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    -webkit-background-size: 40px 50px!important;
+    background-size: 40px 50px!important;
+    left: 5px;
+    top: 10px;
+  }
+  .measure-nav .line1 div:nth-of-type(3),
+  .measure-nav .line2 div:nth-of-type(3) {
+    border-right: none;
+  }
+  .measure-nav .line1 div:nth-of-type(1)::after {
+    background: url("../../images/icon_fpcs_state_csjz.png") no-repeat center;
+  }
+  .measure-nav .line1 div:nth-of-type(2)::after {
+    background: url("../../images/icon_fpcs_state_normal.png") no-repeat center;
+  }
+  .measure-nav .line1 div:nth-of-type(3)::after {
+    background: url("../../images/icon_fpcs_state_warning.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(1)::after {
+    background: url("../../images/icon_fpcs_state_wcj.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(2)::after {
+    background: url("../../images/icon_fpcs_state_ygwdy.png") no-repeat center;
+  }
+  .measure-nav .line2 div:nth-of-type(3)::after {
+    background: url("../../images/icon_fpcs_state_ygydw.png") no-repeat center;
+  }
+  .measure-poorlist ul li {
+    height: 70px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .measure-poorlist ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    position: relative;
+  }
+  .measure-poorlist ul li a span {
+    line-height: 70px;
+  }
+  .measure-poorlist ul li a .title {
+    padding: 0 10px;
+    display: inline-block;
+  }
+  .measure-poorlist ul li a .line {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  .measure-poorlist ul li a .icon {
+    width: 50px;
+    height: 70px;
+    display: inline-block;
+    float: right;
+    background: url("../../images/icon_fpcs_state_normal.png") no-repeat center;
+    -webkit-background-size: 40px 50px;
+    background-size: 40px 50px;
+  }
+  .lifeinfo {
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .lifeinfo div {
+    float: left;
+  }
+  .lifeinfo .address {
+    width: 80%;
+    text-indent: 1em;
+  }
+  .lifeinfo .username {
+    width: 20%;
+    text-align: center;
+  }
+  .tabsbox .tabsnav,
+  .responsible .tabsnav,
+  .basicinfolist .tabsnav,
+  .familyinfolist .tabsnav {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 10px 0;
+  }
+  .tabsbox .tabsnav div,
+  .responsible .tabsnav div,
+  .basicinfolist .tabsnav div,
+  .familyinfolist .tabsnav div {
+    flex: 1;
+    color: #7A7A7A;
+    text-align: center;
+    border-right: 1px solid #1797F6;
+    padding: 10px 0;
+  }
+  .tabsbox .tabsnav div:last-of-type,
+  .responsible .tabsnav div:last-of-type,
+  .basicinfolist .tabsnav div:last-of-type,
+  .familyinfolist .tabsnav div:last-of-type {
+    border: none;
+  }
+  .tabsbox .tabsnav .current,
+  .responsible .tabsnav .current,
+  .basicinfolist .tabsnav .current,
+  .familyinfolist .tabsnav .current {
+    color: #1797F6;
+  }
+  .tabsbox .tabscontent ul,
+  .responsible .tabscontent ul,
+  .basicinfolist .tabscontent ul,
+  .familyinfolist .tabscontent ul {
+    background-color: #fff;
+    display: none;
+  }
+  .tabsbox .tabscontent ul li,
+  .responsible .tabscontent ul li,
+  .basicinfolist .tabscontent ul li,
+  .familyinfolist .tabscontent ul li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .tabsbox .tabscontent ul li div:nth-of-type(1),
+  .responsible .tabscontent ul li div:nth-of-type(1),
+  .basicinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+    flex: 3;
+    padding-left: 10px;
+  }
+  .tabsbox .tabscontent ul li div:nth-of-type(2),
+  .responsible .tabscontent ul li div:nth-of-type(2),
+  .basicinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+    flex: 1;
+    text-align: center;
+    color: #1797F6;
+  }
+  .tabsbox .tabscontent ul li .weight,
+  .responsible .tabscontent ul li .weight,
+  .basicinfolist .tabscontent ul li .weight,
+  .familyinfolist .tabscontent ul li .weight {
+    font-weight: 800;
+  }
+  .tabsbox .tabscontent .show,
+  .responsible .tabscontent .show,
+  .basicinfolist .tabscontent .show,
+  .familyinfolist .tabscontent .show {
+    display: block;
+  }
+  .planarea {
+    padding: 20px 10px;
+  }
+  .planarea p {
+    margin-bottom: 20px;
+  }
+  .responsible .tabscontent ul,
+  .basicinfolist .tabscontent ul,
+  .familyinfolist .tabscontent ul {
+    display: block;
+  }
+  .responsible .tabscontent ul li div:nth-of-type(1),
+  .basicinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+    flex: 1;
+    text-align: left;
+  }
+  .responsible .tabscontent ul li div:nth-of-type(2),
+  .basicinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+    padding-right: 10px;
+    text-align: right;
+    flex: 2;
+  }
+  .familyuser {
+    padding: 20px 5px;
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .familyuser .line1 {
+    display: flex;
+  }
+  .familyuser .line1 div {
+    flex: 1;
+  }
+  .familyuser .line1 div .gender {
+    margin-left: 10px;
+  }
+  .familyuser .line1 div:first-of-type {
+    padding-left: 35px;
+    position: relative;
+  }
+  .familyuser .line1 div:first-of-type::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+    left: 0;
+    top: -5px;
+  }
+  .familyuser .line2 {
+    display: flex;
+    color: #7A7A7A;
+  }
+  .familyuser .line2 div {
+    padding-top: 20px;
+  }
+  .familyuser .line2 div:first-of-type {
+    flex: 3;
+    text-indent: 35px;
+  }
+  .familyuser .line2 div:last-of-type {
+    flex: 5;
+  }
+  .familyinfolist .title,
+  .familyperson .title {
+    text-align: center;
+    color: #1797F6;
+    padding: 20px 0;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .familyinfolist .tabscontent ul,
+  .familyperson .tabscontent ul {
+    display: block;
+  }
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .familyperson .tabscontent ul li div:nth-of-type(1) {
+    flex: 3;
+    text-align: left;
+  }
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .familyperson .tabscontent ul li div:nth-of-type(2) {
+    padding-right: 10px;
+    text-align: right;
+    flex: 1;
+  }
+  .addname {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .addname ul li {
+    padding: 20px 60px;
+    position: relative;
+  }
+  .addname ul li:first-of-type::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url("../../images/address.png") no-repeat center;
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+    left: 20px;
+    top: 10px;
+  }
+  .addname ul li:last-of-type::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../../images/name.png") no-repeat center;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+    left: 25px;
+    top: 15px;
+  }
+  .familyperson .listcontent ul li {
+    border-bottom: 1px solid #E3E3E3;
+    display: flex;
+    padding: 20px 0;
+  }
+  .familyperson .listcontent ul li div {
+    flex: 1;
+    text-align: center;
+  }
+  .familyperson .listcontent ul li div:nth-of-type(2),
+  .familyperson .listcontent ul li div:nth-of-type(3),
+  .familyperson .listcontent ul li div:nth-of-type(4) {
+    color: #1797F6;
+  }
+  .familyperson .listcontent ul li div:last-of-type a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/enter_icon.png") no-repeat center;
+    -webkit-background-size: 15px 19px;
+    background-size: 15px 19px;
+  }
+  .moveoutlist ul li {
+    padding: 20px 10px;
+    display: flex;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .moveoutlist ul li div:first-of-type {
+    flex: 3;
+  }
+  .moveoutlist ul li div:last-of-type {
+    flex: 1;
+    text-align: right;
+    color: #1797F6;
+  }
+  .poorsearch .search {
+    display: block;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../../images/village_search_btn_white.png") no-repeat center;
+    right: 15px;
+    top: 25px;
+    background-size: 30px 30px;
+  }
+  .counttitle {
+    padding: 20px;
+    background-color: #D9F1FF;
+    display: flex;
+  }
+  .counttitle div {
+    flex: 1;
+    color: #1797F6;
+  }
+  .counttitle div span {
+    font-weight: 900;
+  }
+  .counttitle div:first-of-type {
+    text-align: left;
+  }
+  .counttitle div:last-of-type {
+    text-align: right;
+  }
+  .responselist {
+    padding: 10px;
+  }
+  .responselist ul {
+    border: 1px solid #E0E0E0;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .responselist ul li:first-of-type {
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    padding: 20px 0;
+  }
+  .responselist ul li:first-of-type div {
+    flex: 2;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+  }
+  .responselist ul li:first-of-type div:first-of-type {
+    font-weight: 900;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(2),
+  .responselist ul li:first-of-type div:nth-of-type(3),
+  .responselist ul li:first-of-type div:nth-of-type(4) {
+    font-size: 14px;
+    text-align: center;
+    color: #A6A6A6;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(2) {
+    text-align: left;
+  }
+  .responselist ul li:first-of-type div:nth-of-type(3) {
+    flex: 1;
+    background-color: #34BE2D;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  .responselist ul li:first-of-type div:last-of-type {
+    padding-right: 15px;
+    text-align: right;
+  }
+  .responselist ul li:first-of-type div:last-of-type::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 19px;
+    background: url("../../images/enter_icon.png") no-repeat center;
+    -webkit-background-size: 10px 19px;
+    background-size: 10px 19px;
+    right: 0;
+    top: 0;
+  }
+  .responselist ul li:last-of-type {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responselist ul li:last-of-type div:first-of-type {
+    flex: 1;
+    color: #7A7A7A;
+    font-size: 14px;
+  }
+  .responselist ul li:last-of-type div:last-of-type {
+    flex: 4;
+    font-weight: 900;
+  }
+  .householderinfo {
+    border-top: 10px solid #DFDFDF;
+  }
+  .householderinfo > ul,
+  .householderinfo > div {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .householderinfo > ul li,
+  .householderinfo > div li {
+    display: flex;
+  }
+  .householderinfo > ul li div,
+  .householderinfo > div li div {
+    flex: 1;
+    padding: 15px 10px;
+  }
+  .householderinfo > ul li div:last-of-type,
+  .householderinfo > div li div:last-of-type {
+    text-align: right;
+  }
+  .householderinfo > ul li:first-of-type {
+    padding: 15px 10px;
+    border-bottom: 1px solid #C8C8C8;
+    border-top: 1px solid #C8C8C8;
+    border-left: 5px solid #46A9EC;
+  }
+  .householderinfo .familytree > div:first-of-type,
+  .householderinfo .lifetree > div:first-of-type {
+    padding: 15px 10px;
+    border-top: 1px solid #C8C8C8;
+    border-left: 5px solid #46A9EC;
+  }
+  .householderinfo .familytree > ul,
+  .householderinfo .lifetree > ul {
+    border-top: 1px solid #C8C8C8;
+  }
+}
