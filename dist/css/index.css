@@ -381,7 +381,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Microsoft YaHei", "΢���ź�", Tahoma, Helvetica;
+  font-family: 'SimHei';
   color: #000;
 }
 @media (max-width: 320px) {
@@ -451,7 +451,6 @@ body {
   .userinfo1 .line1 .reason {
     flex: 2;
     text-indent: 40px;
-    font-weight: 800;
   }
   .userinfo1 .line1 .reason {
     flex: 1;
@@ -501,12 +500,14 @@ body {
   .userinfo2 ul li span:first-of-type {
     float: left;
     width: 35%;
-    font-weight: 800;
   }
   .userinfo2 ul li span:last-of-type {
     float: right;
     width: 65%;
     color: #007FEB;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
   }
   .userinfo2 ul li:last-of-type {
     border: none;
@@ -1217,7 +1218,6 @@ body {
   .userinfo1 .line1 .reason {
     flex: 2;
     text-indent: 40px;
-    font-weight: 800;
   }
   .userinfo1 .line1 .reason {
     flex: 1;
@@ -1231,7 +1231,7 @@ body {
     height: 30px;
     content: '';
     position: absolute;
-    top: 20px;
+    top: 15px;
     background-size: 30px 30px!important;
     -webkit-background-size: 30px 30px;
   }
@@ -1246,7 +1246,7 @@ body {
   .userinfo1 .line1,
   .userinfo1 .line2 {
     width: 100%;
-    padding: 25px 0;
+    padding: 20px 0;
     display: flex;
   }
   .userinfo1 .line2 > div {
@@ -1257,7 +1257,7 @@ body {
     border-bottom: 5px solid #DFDFDF;
   }
   .userinfo2 ul li {
-    padding: 25px 0;
+    padding: 20px 0;
     border-bottom: 1px solid #DFDFDF;
     overflow: hidden;
   }
@@ -1267,12 +1267,14 @@ body {
   .userinfo2 ul li span:first-of-type {
     float: left;
     width: 35%;
-    font-weight: 800;
   }
   .userinfo2 ul li span:last-of-type {
     float: right;
     width: 65%;
     color: #007FEB;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
   }
   .userinfo2 ul li:last-of-type {
     border: none;
