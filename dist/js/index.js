@@ -25,13 +25,13 @@ for (var i = 0; i < poorList.length; i++) {
 
 window.onresize=function(){
     for (var i = 0; i < poorList.length; i++) {
-        var icon=poorList[i].querySelector('.icon');
-        var title=poorList[i].querySelector('.title');
-        var line=poorList[i].querySelector('.line');
-        var liWidth=poorList[i].offsetWidth;
-        var iconWidth=icon.offsetWidth;
-        var titleWidth=title.offsetWidth;
-        var lineWidth=liWidth-iconWidth-titleWidth;
+        icon=poorList[i].querySelector('.icon');
+        title=poorList[i].querySelector('.title');
+        line=poorList[i].querySelector('.line');
+        liWidth=poorList[i].offsetWidth;
+        iconWidth=icon.offsetWidth;
+        titleWidth=title.offsetWidth;
+        lineWidth=liWidth-iconWidth-titleWidth;
         line.style.width=lineWidth+'px';
     }
 }
