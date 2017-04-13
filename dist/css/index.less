@@ -39,6 +39,16 @@ body {
       background-size: 30px 30px;
     }
   }
+  .logintopnav{
+    background-color: #fff;
+    border-bottom: 1px solid #E6E6E6;
+    height: 40px;
+    .title{
+      color: #000;font-size: 14px;
+      line-height: 40px;
+      font-family: microsoft YaHei;
+    }
+  }
   .year{
     background-color: #D9F1FF;
     height: 60px;
@@ -832,10 +842,127 @@ body {
       }
     }
   }
+  //login
+  .loadForm{
+    #loadForm{
+      padding: 20px 0px;
+      ul{
+        li{
+          height: 36px;
+          background-color: #fff;
+          margin-bottom: 15px;
+          border-bottom: 1px solid #E6E6E6;
+          border-top: 1px solid #E6E6E6;
+          overflow: hidden;
+          label{
+            width: 30%;
+            display: block;
+            float: left;
+            text-indent: 20px;
+            height: 36px;
+            line-height: 36px;
+            color: #7A7A7A;
+          }
+          input{
+            float: left;
+            display: block;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            height: 36px;
+            width: 65%;
+            border: none;
+            font-family: microsoft yahei;
+          }
+          input::-webkit-input-placeholder{
+            color: #7A7A7A;
+            font-family: microsoft yahei;
+          }
+          input[type=button]{
+            padding: 10px 5px;
+          }
+          input[type=button]{
+            border: none;
+            background-color: #1F94F1;
+            color: #ffffff;
+          }
+        }
+        .wrong{
+          display:none;
+          text-align: center;
+          color: red;
+          line-height: 36px;
+          border: none;
+          background-color: #F5F5F5;
+        }
+        .phoneverify{
+          background-color: #F5F5F5;
+          border: none;
+          input[type=text]{
+            padding-left: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 50%;
+            border: 1px solid #E6E6E6;
+          }
+          input[type=button]{
+            width: 30%;
+            padding: 0;
+            line-height: 36px;
+            border: none;
+            background-color: #1F94F1;
+            color: #ffffff;
+            border-radius: 15px;
+          }
+          input.disabled{
+            opacity: 0.6;
+          }
+        }
+        li:last-of-type{
+          background-color: #F5F5F5;
+          border: none;
+          input[type=button]{
+            padding: 0;
+            line-height: 36px;
+            width: 90%;
+            border-radius: 15px;
+            margin-left: 5%;
+          }
+          input.disabled{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+  .nosql{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -130px;
+    border: 5px solid #E6E6E6;
+    border-radius: 100px;
+    background: url("../../images/nosql.png")no-repeat;
+    -webkit-background-size: 150px 150px;
+    background-size: 150px 150px;
+    background-position: 30px 25px;
+    >div{
+      margin-top: 220px;
+      font-size: 30px;
+      text-align: center;
+      color: #E6E6E6;
+    }
+  }
 }
 @media (min-width: 321px) and (max-width: 767px){
   body{
     font-size: 16px;
+  }
+  ::-webkit-scrollbar{
+    display: none;
   }
   //index
   .topnav{
@@ -1655,6 +1782,129 @@ body {
           top: 0;
         }
       }
+    }
+  }
+  .logintopnav{
+    background-color: #fff;
+    border-bottom: 1px solid #E6E6E6;
+    height: 60px;
+    .title{
+      color: #000;font-size: 16px;
+      line-height: 60px;
+      font-family: microsoft YaHei;
+    }
+  }
+  .loadForm{
+    #loadForm{
+      padding: 20px 0px;
+      ul{
+        li{
+          height: 50px;
+          background-color: #fff;
+          margin-bottom: 15px;
+          border-bottom: 1px solid #E6E6E6;
+          border-top: 1px solid #E6E6E6;
+          overflow: hidden;
+          label{
+            width: 30%;
+            display: block;
+            float: left;
+            text-indent: 20px;
+            height: 50px;
+            line-height: 50px;
+            color: #7A7A7A;
+          }
+          input{
+            float: left;
+            display: block;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            height: 50px;
+            width: 65%;
+            border: none;
+            font-family: microsoft yahei;
+          }
+          input::-webkit-input-placeholder{
+            color: #7A7A7A;
+            font-family: microsoft yahei;
+          }
+          input[type=button]{
+            padding: 10px 5px;
+          }
+          input[type=button]{
+            border: none;
+            background-color: #1F94F1;
+            color: #ffffff;
+          }
+        }
+        .wrong{
+          display:none;
+          text-align: center;
+          color: red;
+          line-height: 50px;
+          border: none;
+          background-color: #F5F5F5;
+        }
+        .phoneverify{
+          background-color: #F5F5F5;
+          border: none;
+          input[type=text]{
+            padding-left: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 50%;
+            border: 1px solid #E6E6E6;
+          }
+          input[type=button]{
+            width: 30%;
+            padding: 0;
+            line-height: 50px;
+            border: none;
+            background-color: #1F94F1;
+            color: #ffffff;
+            border-radius: 15px;
+          }
+          input.disabled{
+            opacity: 0.6;
+          }
+        }
+        li:last-of-type{
+          background-color: #F5F5F5;
+          border: none;
+          input[type=button]{
+            padding: 0;
+            line-height: 50px;
+            width: 90%;
+            border-radius: 15px;
+            margin-left: 5%;
+          }
+          input.disabled{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+  .nosql{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -180px;
+    border: 5px solid #E6E6E6;
+    border-radius: 150px;
+    background: url("../../images/nosql.png")no-repeat;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+    background-position: 55px 50px;
+    >div{
+      margin-top: 330px;
+      font-size: 40px;
+      text-align: center;
+      color: #E6E6E6;
     }
   }
 }
