@@ -623,7 +623,7 @@ body {
     top: 20px;
   }
   .link-content tr td:last-of-type {
-    border-right: none;
+    border-right: 1px solid #DFDFDF;
   }
   .link-content tr:last-of-type {
     border-bottom: none;
@@ -808,7 +808,8 @@ body {
   .tabsbox .tabsnav,
   .responsible .tabsnav,
   .basicinfolist .tabsnav,
-  .familyinfolist .tabsnav {
+  .familyinfolist .tabsnav,
+  .measureinfoList .tabsnav {
     display: flex;
     background-color: #F5F5F5;
     padding: 15px 0;
@@ -816,7 +817,8 @@ body {
   .tabsbox .tabsnav div,
   .responsible .tabsnav div,
   .basicinfolist .tabsnav div,
-  .familyinfolist .tabsnav div {
+  .familyinfolist .tabsnav div,
+  .measureinfoList .tabsnav div {
     flex: 1;
     color: #7A7A7A;
     text-align: center;
@@ -825,26 +827,30 @@ body {
   .tabsbox .tabsnav div:last-of-type,
   .responsible .tabsnav div:last-of-type,
   .basicinfolist .tabsnav div:last-of-type,
-  .familyinfolist .tabsnav div:last-of-type {
+  .familyinfolist .tabsnav div:last-of-type,
+  .measureinfoList .tabsnav div:last-of-type {
     border: none;
   }
   .tabsbox .tabsnav .current,
   .responsible .tabsnav .current,
   .basicinfolist .tabsnav .current,
-  .familyinfolist .tabsnav .current {
+  .familyinfolist .tabsnav .current,
+  .measureinfoList .tabsnav .current {
     color: #1797F6;
   }
   .tabsbox .tabscontent ul,
   .responsible .tabscontent ul,
   .basicinfolist .tabscontent ul,
-  .familyinfolist .tabscontent ul {
+  .familyinfolist .tabscontent ul,
+  .measureinfoList .tabscontent ul {
     background-color: #fff;
     display: none;
   }
   .tabsbox .tabscontent ul li,
   .responsible .tabscontent ul li,
   .basicinfolist .tabscontent ul li,
-  .familyinfolist .tabscontent ul li {
+  .familyinfolist .tabscontent ul li,
+  .measureinfoList .tabscontent ul li {
     display: flex;
     padding: 15px 0;
     border-bottom: 1px solid #E3E3E3;
@@ -852,14 +858,16 @@ body {
   .tabsbox .tabscontent ul li div:nth-of-type(1),
   .responsible .tabscontent ul li div:nth-of-type(1),
   .basicinfolist .tabscontent ul li div:nth-of-type(1),
-  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .measureinfoList .tabscontent ul li div:nth-of-type(1) {
     flex: 3;
     padding-left: 10px;
   }
   .tabsbox .tabscontent ul li div:nth-of-type(2),
   .responsible .tabscontent ul li div:nth-of-type(2),
   .basicinfolist .tabscontent ul li div:nth-of-type(2),
-  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .measureinfoList .tabscontent ul li div:nth-of-type(2) {
     flex: 1;
     text-align: center;
     color: #1797F6;
@@ -867,13 +875,15 @@ body {
   .tabsbox .tabscontent ul li .weight,
   .responsible .tabscontent ul li .weight,
   .basicinfolist .tabscontent ul li .weight,
-  .familyinfolist .tabscontent ul li .weight {
+  .familyinfolist .tabscontent ul li .weight,
+  .measureinfoList .tabscontent ul li .weight {
     font-weight: 800;
   }
   .tabsbox .tabscontent .show,
   .responsible .tabscontent .show,
   .basicinfolist .tabscontent .show,
-  .familyinfolist .tabscontent .show {
+  .familyinfolist .tabscontent .show,
+  .measureinfoList .tabscontent .show {
     display: block;
   }
   .planarea {
@@ -884,18 +894,21 @@ body {
   }
   .responsible .tabscontent ul,
   .basicinfolist .tabscontent ul,
-  .familyinfolist .tabscontent ul {
+  .familyinfolist .tabscontent ul,
+  .measureinfoList .tabscontent ul {
     display: block;
   }
   .responsible .tabscontent ul li div:nth-of-type(1),
   .basicinfolist .tabscontent ul li div:nth-of-type(1),
-  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .measureinfoList .tabscontent ul li div:nth-of-type(1) {
     flex: 1;
     text-align: left;
   }
   .responsible .tabscontent ul li div:nth-of-type(2),
   .basicinfolist .tabscontent ul li div:nth-of-type(2),
-  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .measureinfoList .tabscontent ul li div:nth-of-type(2) {
     padding-right: 10px;
     text-align: right;
     flex: 2;
@@ -947,7 +960,7 @@ body {
   .familyperson .title {
     text-align: center;
     color: #1797F6;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #E3E3E3;
   }
   .familyinfolist .tabscontent ul,
@@ -1060,46 +1073,57 @@ body {
   .counttitle div:last-of-type {
     text-align: right;
   }
-  .responselist {
+  .responselist,
+  .educationList {
     padding: 10px;
   }
-  .responselist ul {
+  .responselist ul,
+  .educationList ul {
     border: 1px solid #E0E0E0;
     padding: 0 10px;
     margin-bottom: 10px;
   }
-  .responselist ul li:first-of-type {
+  .responselist ul li:first-of-type,
+  .educationList ul li:first-of-type {
     border-bottom: 1px solid #E0E0E0;
     display: flex;
     padding: 10px 0;
   }
-  .responselist ul li:first-of-type div {
+  .responselist ul li:first-of-type div,
+  .educationList ul li:first-of-type div {
     flex: 2;
     height: 20px;
     line-height: 20px;
     position: relative;
   }
   .responselist ul li:first-of-type div:nth-of-type(2),
+  .educationList ul li:first-of-type div:nth-of-type(2),
   .responselist ul li:first-of-type div:nth-of-type(3),
-  .responselist ul li:first-of-type div:nth-of-type(4) {
+  .educationList ul li:first-of-type div:nth-of-type(3),
+  .responselist ul li:first-of-type div:nth-of-type(4),
+  .educationList ul li:first-of-type div:nth-of-type(4) {
     font-size: 12px;
     text-align: center;
     color: #A6A6A6;
   }
-  .responselist ul li:first-of-type div:nth-of-type(2) {
+  .responselist ul li:first-of-type div:nth-of-type(2),
+  .educationList ul li:first-of-type div:nth-of-type(2) {
     text-align: left;
   }
-  .responselist ul li:first-of-type div:nth-of-type(3) {
+  .responselist ul li:first-of-type div:nth-of-type(3),
+  .educationList ul li:first-of-type div:nth-of-type(3) {
     flex: 1;
     background-color: #34BE2D;
     color: #ffffff;
     border-radius: 8px;
   }
-  .responselist ul li:first-of-type div:last-of-type {
+  .responselist ul li:first-of-type div:nth-of-type(4),
+  .educationList ul li:first-of-type div:nth-of-type(4) {
     padding-right: 15px;
     text-align: right;
   }
-  .responselist ul li:first-of-type div:last-of-type::after {
+  .responselist ul li:first-of-type div:nth-of-type(4)::after,
+  .educationList ul li:first-of-type div:nth-of-type(4)::after {
     content: '';
     display: block;
     position: absolute;
@@ -1111,17 +1135,58 @@ body {
     right: 0;
     top: 0;
   }
-  .responselist ul li:last-of-type {
+  .responselist ul li:last-of-type,
+  .educationList ul li:last-of-type {
     display: flex;
     padding: 10px 0;
   }
-  .responselist ul li:last-of-type div:first-of-type {
+  .responselist ul li:last-of-type div:first-of-type,
+  .educationList ul li:last-of-type div:first-of-type {
     flex: 1;
     color: #7A7A7A;
     font-size: 12px;
   }
-  .responselist ul li:last-of-type div:last-of-type {
+  .responselist ul li:last-of-type div:last-of-type,
+  .educationList ul li:last-of-type div:last-of-type {
     flex: 4;
+  }
+  .educationList ul li {
+    display: flex;
+    padding: 10px 0;
+  }
+  .educationList ul li div,
+  .educationList ul li span {
+    font-size: 14px!important;
+  }
+  .educationList ul li div {
+    flex: 1!important;
+  }
+  .educationList ul li div:first-of-type {
+    text-align: left;
+    color: #000000!important;
+  }
+  .educationList ul li div:last-of-type {
+    text-align: right;
+    color: #6E6E6E;
+  }
+  .educationList ul li:first-of-type div,
+  .educationList ul li:first-of-type span {
+    color: #1797F6 !important;
+  }
+  .educationList ul li:first-of-type div:last-of-type {
+    text-align: right;
+  }
+  .measureinfoList > .tabscontent ul {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .measureinfoList > .tabscontent ul li {
+    border: none;
+  }
+  .measureinfoList > .tabscontent ul li div {
+    color: #000000!important;
+  }
+  .measureinfoList2 ul li:first-of-type {
+    color: #46A9EC!important;
   }
   .householderinfo {
     border-top: 10px solid #DFDFDF;
@@ -1745,7 +1810,8 @@ body {
   .tabsbox .tabsnav,
   .responsible .tabsnav,
   .basicinfolist .tabsnav,
-  .familyinfolist .tabsnav {
+  .familyinfolist .tabsnav,
+  .measureinfoList .tabsnav {
     display: flex;
     background-color: #F5F5F5;
     padding: 10px 0;
@@ -1753,7 +1819,8 @@ body {
   .tabsbox .tabsnav div,
   .responsible .tabsnav div,
   .basicinfolist .tabsnav div,
-  .familyinfolist .tabsnav div {
+  .familyinfolist .tabsnav div,
+  .measureinfoList .tabsnav div {
     flex: 1;
     color: #7A7A7A;
     text-align: center;
@@ -1763,26 +1830,30 @@ body {
   .tabsbox .tabsnav div:last-of-type,
   .responsible .tabsnav div:last-of-type,
   .basicinfolist .tabsnav div:last-of-type,
-  .familyinfolist .tabsnav div:last-of-type {
+  .familyinfolist .tabsnav div:last-of-type,
+  .measureinfoList .tabsnav div:last-of-type {
     border: none;
   }
   .tabsbox .tabsnav .current,
   .responsible .tabsnav .current,
   .basicinfolist .tabsnav .current,
-  .familyinfolist .tabsnav .current {
+  .familyinfolist .tabsnav .current,
+  .measureinfoList .tabsnav .current {
     color: #1797F6;
   }
   .tabsbox .tabscontent ul,
   .responsible .tabscontent ul,
   .basicinfolist .tabscontent ul,
-  .familyinfolist .tabscontent ul {
+  .familyinfolist .tabscontent ul,
+  .measureinfoList .tabscontent ul {
     background-color: #fff;
     display: none;
   }
   .tabsbox .tabscontent ul li,
   .responsible .tabscontent ul li,
   .basicinfolist .tabscontent ul li,
-  .familyinfolist .tabscontent ul li {
+  .familyinfolist .tabscontent ul li,
+  .measureinfoList .tabscontent ul li {
     display: flex;
     padding: 20px 0;
     border-bottom: 1px solid #E3E3E3;
@@ -1790,14 +1861,16 @@ body {
   .tabsbox .tabscontent ul li div:nth-of-type(1),
   .responsible .tabscontent ul li div:nth-of-type(1),
   .basicinfolist .tabscontent ul li div:nth-of-type(1),
-  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .measureinfoList .tabscontent ul li div:nth-of-type(1) {
     flex: 3;
     padding-left: 10px;
   }
   .tabsbox .tabscontent ul li div:nth-of-type(2),
   .responsible .tabscontent ul li div:nth-of-type(2),
   .basicinfolist .tabscontent ul li div:nth-of-type(2),
-  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .measureinfoList .tabscontent ul li div:nth-of-type(2) {
     flex: 1;
     text-align: center;
     color: #1797F6;
@@ -1805,13 +1878,15 @@ body {
   .tabsbox .tabscontent ul li .weight,
   .responsible .tabscontent ul li .weight,
   .basicinfolist .tabscontent ul li .weight,
-  .familyinfolist .tabscontent ul li .weight {
+  .familyinfolist .tabscontent ul li .weight,
+  .measureinfoList .tabscontent ul li .weight {
     font-weight: 800;
   }
   .tabsbox .tabscontent .show,
   .responsible .tabscontent .show,
   .basicinfolist .tabscontent .show,
-  .familyinfolist .tabscontent .show {
+  .familyinfolist .tabscontent .show,
+  .measureinfoList .tabscontent .show {
     display: block;
   }
   .planarea {
@@ -1822,18 +1897,21 @@ body {
   }
   .responsible .tabscontent ul,
   .basicinfolist .tabscontent ul,
-  .familyinfolist .tabscontent ul {
+  .familyinfolist .tabscontent ul,
+  .measureinfoList .tabscontent ul {
     display: block;
   }
   .responsible .tabscontent ul li div:nth-of-type(1),
   .basicinfolist .tabscontent ul li div:nth-of-type(1),
-  .familyinfolist .tabscontent ul li div:nth-of-type(1) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(1),
+  .measureinfoList .tabscontent ul li div:nth-of-type(1) {
     flex: 1;
     text-align: left;
   }
   .responsible .tabscontent ul li div:nth-of-type(2),
   .basicinfolist .tabscontent ul li div:nth-of-type(2),
-  .familyinfolist .tabscontent ul li div:nth-of-type(2) {
+  .familyinfolist .tabscontent ul li div:nth-of-type(2),
+  .measureinfoList .tabscontent ul li div:nth-of-type(2) {
     padding-right: 10px;
     text-align: right;
     flex: 2;
@@ -1998,46 +2076,57 @@ body {
   .counttitle div:last-of-type {
     text-align: right;
   }
-  .responselist {
+  .responselist,
+  .educationList {
     padding: 10px;
   }
-  .responselist ul {
+  .responselist ul,
+  .educationList ul {
     border: 1px solid #E0E0E0;
     padding: 0 10px;
     margin-bottom: 10px;
   }
-  .responselist ul li:first-of-type {
+  .responselist ul li:first-of-type,
+  .educationList ul li:first-of-type {
     border-bottom: 1px solid #E0E0E0;
     display: flex;
     padding: 20px 0;
   }
-  .responselist ul li:first-of-type div {
+  .responselist ul li:first-of-type div,
+  .educationList ul li:first-of-type div {
     flex: 2;
     height: 20px;
     line-height: 20px;
     position: relative;
   }
   .responselist ul li:first-of-type div:nth-of-type(2),
+  .educationList ul li:first-of-type div:nth-of-type(2),
   .responselist ul li:first-of-type div:nth-of-type(3),
-  .responselist ul li:first-of-type div:nth-of-type(4) {
+  .educationList ul li:first-of-type div:nth-of-type(3),
+  .responselist ul li:first-of-type div:nth-of-type(4),
+  .educationList ul li:first-of-type div:nth-of-type(4) {
     font-size: 14px;
     text-align: center;
     color: #A6A6A6;
   }
-  .responselist ul li:first-of-type div:nth-of-type(2) {
+  .responselist ul li:first-of-type div:nth-of-type(2),
+  .educationList ul li:first-of-type div:nth-of-type(2) {
     text-align: left;
   }
-  .responselist ul li:first-of-type div:nth-of-type(3) {
+  .responselist ul li:first-of-type div:nth-of-type(3),
+  .educationList ul li:first-of-type div:nth-of-type(3) {
     flex: 1;
     background-color: #34BE2D;
     color: #ffffff;
     border-radius: 8px;
   }
-  .responselist ul li:first-of-type div:last-of-type {
+  .responselist ul li:first-of-type div:last-of-type,
+  .educationList ul li:first-of-type div:last-of-type {
     padding-right: 15px;
     text-align: right;
   }
-  .responselist ul li:first-of-type div:last-of-type::after {
+  .responselist ul li:first-of-type div:last-of-type::after,
+  .educationList ul li:first-of-type div:last-of-type::after {
     content: '';
     display: block;
     position: absolute;
@@ -2049,16 +2138,19 @@ body {
     right: 0;
     top: 0;
   }
-  .responselist ul li:last-of-type {
+  .responselist ul li:last-of-type,
+  .educationList ul li:last-of-type {
     display: flex;
     padding: 10px 0;
   }
-  .responselist ul li:last-of-type div:first-of-type {
+  .responselist ul li:last-of-type div:first-of-type,
+  .educationList ul li:last-of-type div:first-of-type {
     flex: 1;
     color: #7A7A7A;
     font-size: 14px;
   }
-  .responselist ul li:last-of-type div:last-of-type {
+  .responselist ul li:last-of-type div:last-of-type,
+  .educationList ul li:last-of-type div:last-of-type {
     flex: 4;
   }
   .householderinfo {
@@ -2075,21 +2167,21 @@ body {
   .householderinfo > ul li div,
   .householderinfo > div li div {
     flex: 1;
-    padding: 15px 10px;
+    padding: 20px 10px;
   }
   .householderinfo > ul li div:last-of-type,
   .householderinfo > div li div:last-of-type {
     text-align: right;
   }
   .householderinfo > ul li:first-of-type {
-    padding: 15px 10px;
+    padding: 20px 10px;
     border-bottom: 1px solid #C8C8C8;
     border-top: 1px solid #C8C8C8;
     border-left: 5px solid #46A9EC;
   }
   .householderinfo .familytree > div:first-of-type,
   .householderinfo .lifetree > div:first-of-type {
-    padding: 15px 10px;
+    padding: 20px 10px;
     border-top: 1px solid #C8C8C8;
     border-left: 5px solid #46A9EC;
   }
@@ -2279,5 +2371,43 @@ body {
     font-size: 40px;
     text-align: center;
     color: #E6E6E6;
+  }
+  .educationList ul li {
+    display: flex;
+    padding: 20px 0;
+  }
+  .educationList ul li div,
+  .educationList ul li span {
+    font-size: 16px!important;
+  }
+  .educationList ul li div {
+    flex: 1!important;
+  }
+  .educationList ul li div:first-of-type {
+    text-align: left;
+    color: #000000!important;
+  }
+  .educationList ul li div:last-of-type {
+    text-align: right;
+    color: #6E6E6E;
+  }
+  .educationList ul li:first-of-type div,
+  .educationList ul li:first-of-type span {
+    color: #1797F6 !important;
+  }
+  .educationList ul li:first-of-type div:last-of-type {
+    text-align: right;
+  }
+  .measureinfoList > .tabscontent ul {
+    border-bottom: 10px solid #DFDFDF;
+  }
+  .measureinfoList > .tabscontent ul li {
+    border: none;
+  }
+  .measureinfoList > .tabscontent ul li div {
+    color: #000000!important;
+  }
+  .measureinfoList2 ul li:first-of-type {
+    color: #46A9EC!important;
   }
 }

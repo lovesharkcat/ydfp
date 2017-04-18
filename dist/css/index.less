@@ -240,7 +240,7 @@ body {
         }
       }
       td:last-of-type{
-        border-right: none;
+        border-right: 1px solid #DFDFDF;
       }
     }
     tr:last-of-type{
@@ -425,7 +425,7 @@ body {
       text-align: center;
     }
   }
-  .tabsbox,.responsible,.basicinfolist,.familyinfolist{
+  .tabsbox,.responsible,.basicinfolist,.familyinfolist,.measureinfoList{
     .tabsnav{
       display: flex;
       background-color: #F5F5F5;
@@ -471,7 +471,6 @@ body {
     }
   }
   //basicinfo
-
   //helpplan
   .planarea{
     padding: 10px 10px;
@@ -480,7 +479,7 @@ body {
     }
   }
   //basicinfo
-  .responsible,.basicinfolist,.familyinfolist{
+  .responsible,.basicinfolist,.familyinfolist,.measureinfoList{
     .tabscontent{
       ul{
         display: block;
@@ -546,7 +545,7 @@ body {
     .title{
       text-align: center;
       color: #1797F6;
-      padding: 10px 0;
+      padding: 15px 0;
       border-bottom: 1px solid #E3E3E3;
     }
     .tabscontent{
@@ -679,7 +678,7 @@ body {
       text-align: right;
     }
   }
-  .responselist{
+  .responselist,.educationList{
     padding: 10px;
     ul{
       border: 1px solid #E0E0E0;
@@ -710,11 +709,11 @@ body {
           color: #ffffff;
           border-radius: 8px;
         }
-        div:last-of-type{
+        div:nth-of-type(4){
           padding-right: 15px;
           text-align: right;
         }
-        div:last-of-type::after{
+        div:nth-of-type(4)::after{
           content: '';
           display: block;
           position: absolute;
@@ -741,6 +740,60 @@ body {
       }
     }
   }
+  //education
+  .educationList{
+    ul{
+      li{
+        display: flex;
+        padding: 10px 0;
+        div,span{
+          font-size: 14px!important;
+        }
+        div{
+          flex: 1!important;
+        }
+        div:first-of-type{
+          text-align: left;
+          color: #000000!important;
+        }
+        div:last-of-type{
+          text-align: right;
+          color: #6E6E6E;
+        }
+      }
+      li:first-of-type{
+        div,span{
+          color: #1797F6 !important;
+        }
+        div:last-of-type{
+          text-align: right;
+        }
+      }
+    }
+  }
+  //measureinfo
+ .measureinfoList{
+   >.tabscontent{
+     ul{
+       border-bottom: 10px solid #DFDFDF;
+       li{
+         border: none;
+         div{
+           color: #000000!important;
+         }
+       }
+     }
+   }
+ }
+ .measureinfoList2{
+   ul{
+     li:first-of-type{
+       color: #46A9EC!important;
+     }
+   }
+ }
+
+
   //fivelook
   .householderinfo{
     border-top: 10px solid #DFDFDF;
@@ -1366,7 +1419,7 @@ body {
       text-align: center;
     }
   }
-  .tabsbox,.responsible,.basicinfolist,.familyinfolist{
+  .tabsbox,.responsible,.basicinfolist,.familyinfolist,.measureinfoList{
     .tabsnav{
       display: flex;
       background-color: #F5F5F5;
@@ -1422,7 +1475,7 @@ body {
   }
 }
 //basicinfo
-  .responsible,.basicinfolist,.familyinfolist{
+  .responsible,.basicinfolist,.familyinfolist,.measureinfoList{
     .tabscontent{
       ul{
         display: block;
@@ -1621,7 +1674,7 @@ body {
       text-align: right;
     }
   }
-  .responselist{
+  .responselist,.educationList{
     padding: 10px;
     ul{
       border: 1px solid #E0E0E0;
@@ -1692,7 +1745,7 @@ body {
         display: flex;
         div{
           flex: 1;
-          padding: 15px 10px;
+          padding: 20px 10px;
         }
         div:last-of-type{
           text-align: right;
@@ -1701,7 +1754,7 @@ body {
     }
     >ul{
       li:first-of-type{
-        padding: 15px 10px;
+        padding: 20px 10px;
         border-bottom: 1px solid #C8C8C8;
         border-top: 1px solid #C8C8C8;
         border-left: 5px solid #46A9EC;
@@ -1709,7 +1762,7 @@ body {
     }
     .familytree,.lifetree{
       >div:first-of-type{
-        padding: 15px 10px;
+        padding: 20px 10px;
         border-top: 1px solid #C8C8C8;
         border-left: 5px solid #46A9EC;
       }
@@ -1905,6 +1958,56 @@ body {
       font-size: 40px;
       text-align: center;
       color: #E6E6E6;
+    }
+  }
+  .educationList{
+    ul{
+      li{
+        display: flex;
+        padding: 20px 0;
+        div,span{
+          font-size: 16px!important;
+        }
+        div{
+          flex: 1!important;
+        }
+        div:first-of-type{
+          text-align: left;
+          color: #000000!important;
+        }
+        div:last-of-type{
+          text-align: right;
+          color: #6E6E6E;
+        }
+      }
+      li:first-of-type{
+        div,span{
+          color: #1797F6 !important;
+        }
+        div:last-of-type{
+          text-align: right;
+        }
+      }
+    }
+  }
+  .measureinfoList{
+    >.tabscontent{
+      ul{
+        border-bottom: 10px solid #DFDFDF;
+        li{
+          border: none;
+          div{
+            color: #000000!important;
+          }
+        }
+      }
+    }
+  }
+  .measureinfoList2{
+    ul{
+      li:first-of-type{
+        color: #46A9EC!important;
+      }
     }
   }
 }
