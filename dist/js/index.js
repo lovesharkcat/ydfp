@@ -57,13 +57,6 @@ backBtn.onclick=function(){
     window.history.back();
 }
 
-var familyPersonList=document.querySelectorAll('.familyperson .listcontent>ul>li');
-
-for (var i = 0; i < familyPersonList.length; i++) {
-    familyPersonList[i].onclick=function(){
-        window.location.href='familyinfo.html'
-    }
-}
 
 //µÇÂ¼
 
